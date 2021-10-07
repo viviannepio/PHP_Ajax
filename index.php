@@ -105,12 +105,12 @@
             var id = element.attr("id");
             var info = 'id=' +id;
 
-            if(confirm("Deseja realmente excluir esse usuário?"))
+            if(confirm("Deseja realmente apagar esse usuário?"))
             {
                 $.ajax(
                     {
                         type: "POST",
-                        url: "./excluir.php?id="+id,
+                        url: "./apagar.php?id="+id,
                         data: info,
                         success: function() 
                         {
